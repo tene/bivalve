@@ -1,5 +1,5 @@
 [package]
-name = "bivalve"
+name = "shell-engine"
 version = "0.1.0"
 authors = ["Stephen Weeks <tene@allalone.org>"]
 edition = "2018"
