@@ -89,7 +89,7 @@ impl<R: Runtime, E: Execute<R>> Execute<R> for ast::ListableCommand<E> {
     }
 }
 
-impl<R: Runtime, S: Execute<R>, C: Execute<R>, F: Execute<R> + Clone> Execute<R>
+impl<R: Runtime, S: Execute<R>, C: Execute<R>, F: 'static + Execute<R> + Clone> Execute<R>
     for ast::PipeableCommand<String, S, C, F>
 {
     fn exec(&self, rt: &mut R) {
