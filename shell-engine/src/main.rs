@@ -1,10 +1,7 @@
 use std::path::PathBuf;
 use structopt::StructOpt;
 
-use shell_engine::{
-    exec::Execute,
-    rt::{simple::Simple, Runtime},
-};
+use shell_engine::{exec::Execute, rt::simple::Simple};
 
 #[derive(StructOpt, Debug)]
 #[structopt(name = "bivalve")]
